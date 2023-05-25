@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Salavat Shirgaleev} \\ \vspace{1pt}
+    \small 475-228-78-95 $|$ \href{mailto:x@x.com}{\underline{sshirgaleev@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/sshirgaleev/}{\underline{https://www.linkedin.com/in/sshirgaleev}} \\ \vspace{2pt}
+    \small New York, NY $|$ Fully authorized to work in the US $|$ {\underline{https://www.salavat.io}} 
+\end{center}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Scala, JavaScript, TypeScript, SQL, HTML/CSS} \\
+     \textbf{Frameworks}{: Akka (Cluster, HTTP, Streams, Persistence), React, Angular, Alpakka, Spring Boot, Spring MVC, jUnit, Scalatest} \\
+     \textbf{Infrastructure}{: AWS ECS, EC2, S3, RDS, Docker, GitLab CI/CD, ELK, Testcontainers} \\
+     \textbf{Storage/Database}{: Kafka, Redis, PostgreSQL, MS SQL, Aerospike, Redpanda, Snowflake} \\
+     \textbf{Tools}{: Maven, Gradle, gRPC, Rest, WebSockets, Jira, Protocol Buffers, Schema Registry, npm, yarn } \\ 
+     \textbf{Other}{: RestAPI design, Full-stack software design, Frontend app design, Microservice and Monolith architecture, Async/Sync processing}
+    }}
+ \end{itemize}
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer, II}{ July, 2021 -- Present}
+      {Dataminr}{New York, NY}
+      \resumeItemListStart
+      \resumeItem{ Integrated AI models into real-time labeling frontend app written in React and Typescript.}
+      \resumeItem{ Rewrote legacy frontend app to use the latest technologies to meet company performance and scalability standards, improve the developer experience and fasten deployment duration by up to 12x times in the CI/CD pipeline.}
+      \resumeItem{ Developed Beta Features module for canary deployment, and dynamic configuration. This helped us validate the performance and scalability of new features, and mitigate risk iterate faster.}
+      \resumeItem{ Developed 5 different training environments for internal users to enhance their skills, knowledge, and performance and risk-free learning without affecting a production system.}
+      \resumeItem{ Developed numerous features to improve HiTL User Experience and productivity}
+      \resumeItem{ Developed lighting-fast one-command tools for local development which shrunk local development setup from hours to 10 seconds.}
+      \resumeItem{ Clustered  services for better usage of 3rd party services by employing single writer principle}
+      \resumeItem{ Refactored microservices to take advantage of Akka Streams libraries, standardizing them across the platform}
+      \resumeItem{ Successfully integrated new AI models into the real-time data processing pipeline which generates over 2 million dollars a year}
+      \resumeItem{ Developed a highly available, real-time distributed worldwide used collaboration tool using Akka, Redis PubSub and Websocket which dramatically improved the performance of internal employees. Achieved excellent stability, 99.99\% SLA}
+      \resumeItem{ Decreased labeling platform's p95 latency from minutes to 3 seconds}
+      \resumeItem{ Improved task delivery semantics from at most once to at least once which increased alert quality and quantity}
+      \resumeItem{ Increased the platform's stability by creating a standby infrastructure in different availability zones which prevented outages}
+      \resumeItem{ Developed a new highly efficient, distributed, event-sourcing-based service for integrating new AI models into real-time data processing pipeline, which allows AI experimentation, and easy A/B testing}
+      \resumeItem{ Solved distributed concurrency issues and architecture problems (coupled deploys, observability, distributed monolith) using different patterns}
+      \resumeItem{ Implemented the Single Writer Principle to solve concurrency issues using Akka Cluster in services dependent on 3rd party APIs which also helped to reduce the cost of infra and 3rd party services}
+      \resumeItem{ Increased data consistency and prevented data loss by employing event-sourcing patterns and 'at least once' data processing across services}
+      \resumeItem{ Led discussions in monthly architecture reviews which helped to pin-point platform's bottlenecks and made us make better decisions on system design}
+      \resumeItem{ Part of the on-call rotation for Core Platform. Responded to an average of 1-3 critical production incidents with 15 minutes SLA, which I never missed}
+      \resumeItem{ Implemented Kafka producer and consumer applications on Kafka cluster setup with the help of Zookeeper.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Middle Software Engineer }{January, 2020 -- July, 2022}
+      {Brainfuse}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{ Developed a double-entry transaction management system written in Java / RestEasy Framework which helped to grow the business by allowing users to buy subscriptions. 
+        Delivered on time and under budget, to positive marks from CTO and CPO.}
+        \resumeItem{ Improved performance and security of MS SQL database, added new procedures, triggers, indexes and backups. }
+        \resumeItem{ Developed internal tools, custom libraries for developer productivity }
+        \resumeItem{ Developed a learning service with a personalized real-time recommendation system in Java}
+        \resumeItem{ Migrated from polling mechanism to real-time bi-directional client-server communication using WebSockets and Angular. 
+        This substantially reduced latency and improved user experience. }
+        \resumeItem{ Created an automated CI/CD pipeline using Jenkins which moved us to a continuous delivery model, 
+        shipping to production many times per week, previously, we would deploy only twice a month. }
+        \resumeItem{ Wrote automated test for every new feature to identify and rectify bugs}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Software Engineer}{ Feb, 2019 -- January 2020}
+      {Sonocoin}{Remote}
+      \resumeItemListStart
+        \resumeItem{ Developed user management system using Spring Boot and Hibernate }
+        \resumeItem{ Defined table schemas, relations, keys and indexes in PostgreSQL}
+        \resumeItem{ Designed and Implemented web applications using HTML, CSS, and Angular to meet project requirements  }
+        \resumeItem{ Received mentorship from 2 senior engineers while constantly applying their feedback }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kazan Federal University}{Kazan, RU}
+      {Computer Science}{September. 2014 -- May 2017}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
