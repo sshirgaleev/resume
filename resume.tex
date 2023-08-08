@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Sam Smith} \\ \vspace{1pt}
+    \small 123-777-88-99 $|$ \href{mailto:mail@mail.com}{\underline{mail@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/_/}{\underline{https://www.linkedin.com/in/linked}} \\ \vspace{2pt}
+    \small Brooklyn, NY 
+\end{center}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Scala, JavaScript, TypeScript, SQL, HTML/CSS} \\
+     \textbf{Frameworks}{: Akka (Cluster, HTTP, Streams, Persistence), React, Angular, Alpakka, Spring Boot, Spring MVC} \\
+     \textbf{Infrastructure}{: AWS ECS, EC2, S3, RDS, Docker, GitLab CI/CD, ELK, Testcontainers} \\
+     \textbf{Storage/Database}{: Kafka, Redis, PostgreSQL, MS SQL, Aerospike, Redpanda, Snowflake} \\
+     \textbf{Tools}{: Maven, Gradle, gRPC, Rest, WebSockets, Protocol Buffers, Schema Registry, npm, yarn } \\ 
+     \textbf{Other}{: Full-stack software design, Microservice and Monolith architecture, Async/Sync processing}
+    }}
+ \end{itemize}
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer, II}{ August, 2022 -- Present}
+      {Company Name}{San Francisco, NY}
+      \resumeItemListStart
+      \resumeItem{ Reduced duplication by stepping up to build an internal Java service for data serialization, then it. The service was adopted by an internal monitoring tool used by across multiple organizations.}
+      \resumeItem{ Led multiple sprint plannings on a team of 7 engineers.}
+      \resumeItem{Currently learning Scala on the side. After teaching myself Groovy, I became interested in learning another language built on top of the JVM. By going deep with two very different languages—a more dynamic and a more static—I expect to be able to make more pragmatic decisions when choosing languages for projects that interoperate with Java .}
+      \resumeItem{ Defined, designed, implemented and rolled out a multi-tier customer profile service, using Java, leading a team of four engineers. This service is used by five other teams.}
+      \resumeItem{ Introduced best practices on reliability, monitoring and alerting. Built a Grafana generator that creates dashboards from microservice code: this tool was adopted by more than 10 teams. Improved testing practices by developing a reverse proxy for testing, caching calls to the test environment, adopted by my team.}
+      \resumeItem{ Improved how we do rollouts by introducing a beta environment, where new features can be rolled out for a selected amount of customers. Rolled out this environment company-wide.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      { Software Engineer }{January, 2020 -- August, 2022}
+      {Comany Name}{New York, NY}
+      \resumeItemListStart
+      \resumeItem{ Reduced duplication by stepping up to build an internal Java service for data serialization, then it. The service was adopted by an internal monitoring tool used by across multiple organizations.}
+      \resumeItem{ Led multiple sprint plannings on a team of 7 engineers.}
+      \resumeItem{Currently learning Scala on the side. After teaching myself Groovy, I became interested in learning another language built on top of the JVM. By going deep with two very different languages—a more dynamic and a more static—I expect to be able to make more pragmatic decisions when choosing languages for projects that interoperate with Java .}
+      \resumeItem{ Defined, designed, implemented and rolled out a multi-tier customer profile service, using Java, leading a team of four engineers. This service is used by five other teams.}
+      \resumeItem{ Introduced best practices on reliability, monitoring and alerting. Built a Grafana generator that creates dashboards from microservice code: this tool was adopted by more than 10 teams. Improved testing practices by developing a reverse proxy for testing, caching calls to the test environment, adopted by my team.}
+      \resumeItem{ Improved how we do rollouts by introducing a beta environment, where new features can be rolled out for a selected amount of customers. Rolled out this environment company-wide.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{ Feb, 2019 -- January 2020}
+      {Company Name}{Remote}
+      \resumeItemListStart
+      \resumeItem{ Reduced duplication by stepping up to build an internal Java service for data serialization, then it. The service was adopted by an internal monitoring tool used by across multiple organizations.}
+      \resumeItem{ Led multiple sprint plannings on a team of 7 engineers.}
+      \resumeItem{Currently learning Scala on the side. After teaching myself Groovy, I became interested in learning another language built on top of the JVM. By going deep with two very different languages—a more dynamic and a more static—I expect to be able to make more pragmatic decisions when choosing languages for projects that interoperate with Java .}
+      \resumeItem{ Defined, designed, implemented and rolled out a multi-tier customer profile service, using Java, leading a team of four engineers. This service is used by five other teams.}
+      \resumeItem{ Introduced best practices on reliability, monitoring and alerting. Built a Grafana generator that creates dashboards from microservice code: this tool was adopted by more than 10 teams. Improved testing practices by developing a reverse proxy for testing, caching calls to the test environment, adopted by my team.}
+      \resumeItem{ Improved how we do rollouts by introducing a beta environment, where new features can be rolled out for a selected amount of customers. Rolled out this environment company-wide.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { University}{ Location}
+      {Degree}{Graduation}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
